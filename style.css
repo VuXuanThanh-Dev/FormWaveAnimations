@@ -1,0 +1,107 @@
+/* style  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+    color: white;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.title span {
+    display: inline-block;
+    padding: 30px 0;
+    transition: padding 0.6s ease;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding:40px 20px;
+    width: 400px;
+
+}
+
+form h1{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+}
+.form-control {
+    flex:1;
+    background: transparent;
+    border:0;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    line-height: 30px;
+    color:#fff;
+}
+
+label span {
+    display: inline-block;
+}
+
+.form-control:focus + label span, .form-control:valid + label span{
+    color: lightblue;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
+
+
+
+
+
+.form-control:focus .form-group::after {
+    display: block;
+}
+
+label{
+    position: absolute;
+    left:0;
+    bottom:10px;
+    transition: transform 0.5s ease;
+    
+}
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(69, 196, 238); 
+    height: 2px;
+    transition: width 0.5s linear;
+}
+
+
+
+.btn{
+    width: 100%;
+    padding:16px;
+    background-color: lightblue;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
